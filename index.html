@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação - Experiência Stranger Things</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .radio-group label, .checkbox-group label {
+            margin-bottom: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Satisfação</h1>
+        <h2>Experiência Stranger Things</h2>
+        <form id="survey-form" action="https://api.sheetmonkey.io/form/o5DcRK6gJSRidzzrFTb6RJ" method="POST">
+            <p>Bom dia/ tarde, me chamo ____________, sou pesquisadora da GEM Pesquisa, um instituto de estudos mercadológicos. Estamos realizando uma rápida pesquisa de satisfação sobre a Experiencia Stranger Things qual acabou de visitar. Voce poderia participar? Não tomarei mais que 4 minutos do seu tempo. Agradeço desde já.</p>
+            
+            <label for="cidade">1. De qual cidade você é?</label>
+            <input type="text" name="De qual cidade você é?" id="cidade" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" name="Idade" id="idade" required>
+
+            <label for="genero">Gênero:</label>
+            <input type="text" name="Gênero" id="genero" required>
+
+            <label for="bairro">Qual bairro? (para quem é de SP)</label>
+            <input type="text" name="Qual bairro? (para quem é de SP)" id="bairro">
+
+            <label>2. Como você ficou sabendo da experiência?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Redes sociais"> Redes sociais</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Internet"> Internet</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Anúncio rua"> Anúncio rua</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Cinema"> Cinema</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Shopping"> Peças de divulgação no próprio Shopping</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Indicação"> Indicação de amigos/ familiares</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Rádio"> Rádio</label>
+                <label><input type="checkbox" name="Como você ficou sabendo da experiência?" value="Outros"> Outros: <input type="text" name="Como você ficou sabendo da experiência? - Outros"></label>
+            </div>
+
+            <label>3. Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?" value="Muito Satisfeito" required> Muito Satisfeito</label>
+                <label><input type="radio" name="Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?" value="Satisfeito" required> Satisfeito</label>
+                <label><input type="radio" name="Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?" value="Nem satisfeito, nem insatisfeito" required> Nem satisfeito, nem insatisfeito</label>
+                <label><input type="radio" name="Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?" value="Insatisfeito" required> Insatisfeito</label>
+                <label><input type="radio" name="Em relação a impressão com a sua experiência, qual é o seu grau de satisfação?" value="Muito Insatisfeito" required> Muito Insatisfeito</label>
+            </div>
+
+            <label>4. Você recomendaria esta experiência a um amigo?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Você recomendaria esta experiência a um amigo?" value="Sim" required> Sim</label>
+                <label><input type="radio" name="Você recomendaria esta experiência a um amigo?" value="Não" required> Não</label>
+            </div>
+
+            <label>5. Você veio ao Shopping especialmente para a experiência ou estava de passagem pelo Shopping e conheceu a experiência e resolveu visitar?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Você veio ao Shopping especialmente para a experiência ou estava de passagem pelo Shopping e conheceu a experiência e resolveu visitar?" value="Especialmente para a experiência" required> Especialmente para a experiência</label>
+                <label><input type="radio" name="Você veio ao Shopping especialmente para a experiência ou estava de passagem pelo Shopping e conheceu a experiência e resolveu visitar?" value="Estava de passagem e decidi visitar" required> Estava de passagem e decidi visitar</label>
+            </div>
+
+            <div id="pergunta6" class="hidden">
+                <label>6. E você já usou ou pretende usar algum serviço ou já fez ou irá fazer compras no Shopping após sua visita a experiência?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="E você já usou ou pretende usar algum serviço ou já fez ou irá fazer compras no Shopping após sua visita a experiência?" value="Sim"> Sim</label>
+                    <label><input type="radio" name="E você já usou ou pretende usar algum serviço ou já fez ou irá fazer compras no Shopping após sua visita a experiência?" value="Não"> Não</label>
+                </div>
+            </div>
+
+            <div id="pergunta7" class="hidden">
+                <label>7. E qual ou quais serviços você pretende utilizar?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="E qual ou quais serviços você pretende utilizar?" value="Praça da alimentação/ restaurantes"> Praça da alimentação/ restaurantes</label>
+                    <label><input type="checkbox" name="E qual ou quais serviços você pretende utilizar?" value="Fazer compras"> Fazer compras</label>
+                    <label><input type="checkbox" name="E qual ou quais serviços você pretende utilizar?" value="Utilizar outros serviços"> Utilizar outros serviços: <input type="text" name="E qual ou quais serviços você pretende utilizar? - Outros"></label>
+                </div>
+            </div>
+<label>8. Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?</label>
+<div class="checkbox-group">
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Shopping Eldorado"> Shopping Eldorado</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Netflix"> Netflix</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Blast Entretenimento"> Blast Entretenimento</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="DC Set Group"> DC Set Group</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Fever"> Fever</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Não sabe"> Não sabe</label>
+    <label><input type="checkbox" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo?" value="Outro"> Outro: <input type="text" name="Ao seu entender, quem trouxe a Experiência Stranger Things para São Paulo? - Outro"></label>
+</div>
+            
+
+            <label>9. O que você achou do local da experiência?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="O que você achou do local da experiência?" value="Ótimo" required> Ótimo</label>
+                <label><input type="radio" name="O que você achou do local da experiência?" value="Bom" required> Bom</label>
+                <label><input type="radio" name="O que você achou do local da experiência?" value="Regular" required> Regular</label>
+                <label><input type="radio" name="O que você achou do local da experiência?" value="Ruim" required> Ruim</label>
+                <label><input type="radio" name="O que você achou do local da experiência?" value="Péssimo" required> Péssimo</label>
+            </div>
+
+            <label>10. O que você achou das atividades imersivas que estavam na experiência?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="O que você achou das atividades imersivas que estavam na experiência?" value="Ótimo" required> Ótimo</label>
+                <label><input type="radio" name="O que você achou das atividades imersivas que estavam na experiência?" value="Bom" required> Bom</label>
+                <label><input type="radio" name="O que você achou das atividades imersivas que estavam na experiência?" value="Regular" required> Regular</label>
+                <label><input type="radio" name="O que você achou das atividades imersivas que estavam na experiência?" value="Ruim" required> Ruim</label>
+                <label><input type="radio" name="O que você achou das atividades imersivas que estavam na experiência?" value="Péssimo" required> Péssimo</label>
+            </div>
+
+            <label>11. Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?" value="Lojas de bebidas, comidas" required> Lojas de bebidas, comidas</label>
+                <label><input type="radio" name="Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?" value="Fliperama Palace Arcade" required> Fliperama Palace Arcade</label>
+                <label><input type="radio" name="Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?" value="Espaços instagramáveis" required> Espaços instagramáveis</label>
+                <label><input type="radio" name="Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?" value="Vendas de produtos" required> Vendas de produtos</label>
+                <label><input type="radio" name="Que parte mais gostou do MIX TAPE, o lugar comum ao término das atividades?" value="Todos" required> Todos</label>
+            </div>
+
+            <label>12. Esta é a primeira vez que você vem numa experiência imersiva com projeções ou já tinha ido outra vez?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Esta é a primeira vez que você vem numa experiência imersiva com projeções ou já tinha ido outra vez?" value="Primeira vez numa experiência imersiva" required> Primeira vez numa experiência imersiva</label>
+                <label><input type="radio" name="Esta é a primeira vez que você vem numa experiência imersiva com projeções ou já tinha ido outra vez?" value="Já tinha ido outra vez" required> Já tinha ido outra vez</label>
+            </div>
+
+            <label>13. Nesta aqui do Stranger Things é a primeira vez ou já veio antes?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Nesta aqui do Stranger Things é a primeira vez ou já veio antes?" value="Primeira vez" required> Primeira vez</label>
+                <label><input type="radio" name="Nesta aqui do Stranger Things é a primeira vez ou já veio antes?" value="Já tinha vindo antes" required> Já tinha vindo antes</label>
+            </div>
+
+            <label>14. Você assistiu a série Stranger Things?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Você assistiu a série Stranger Things?" value="Sim" required> Sim</label>
+                <label><input type="radio" name="Você assistiu a série Stranger Things?" value="Não" required> Não</label>
+            </div>
+
+            <label>15. Você se considera um fã da série?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Você se considera um fã da série?" value="Sim" required> Sim</label>
+                <label><input type="radio" name="Você se considera um fã da série?" value="Não" required> Não</label>
+            </div>
+
+            <label>16. Acha que a experiência valeu o preço que pagou?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Acha que a experiência valeu o preço que pagou?" value="Sim" required> Sim</label>
+                <label><input type="radio" name="Acha que a experiência valeu o preço que pagou?" value="Não" required> Não</label>
+            </div>
+
+            <label>17. De forma geral, o que achou da experiência? (aberta)</label>
+            <textarea name="De forma geral, o que achou da experiência?" rows="4" required></textarea>
+
+            <label>18. Agora para finalizar, somente para fins de classificação socioeconômica do perfil dos visitantes, pode me dizer qual é a faixa de renda mensal familiar?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Pode me dizer qual é a faixa de renda mensal familiar?" value="menos de R$ 3.300" required> menos de R$ 3.300</label>
+                <label><input type="radio" name="Pode me dizer qual é a faixa de renda mensal familiar?" value="R$ 3.301 até R$ 8.250" required> R$ 3.301 até R$ 8.250</label>
+                <label><input type="radio" name="Pode me dizer qual é a faixa de renda mensal familiar?" value="R$ 8.251 até R$ 24.750" required> R$ 8.251 até R$ 24.750</label>
+                <label><input type="radio" name="Pode me dizer qual é a faixa de renda mensal familiar?" value="R$ 24.751 mais" required> R$ 24.751 mais</label>
+            </div>
+
+            <label>Nome:</label>
+            <input type="text" name="Nome" required>
+
+            <label>Idade:</label>
+            <input type="number" name="Idade (final)" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        const visitaRadios = document.querySelectorAll('input[name="Você veio ao Shopping especialmente para a experiência ou estava de passagem pelo Shopping e conheceu a experiência e resolveu visitar?"]');
+        const pergunta6 = document.getElementById('pergunta6');
+        const pergunta7 = document.getElementById('pergunta7');
+        const comprasRadios = document.querySelectorAll('input[name="E você já usou ou pretende usar algum serviço ou já fez ou irá fazer compras no Shopping após sua visita a experiência?"]');
+
+        visitaRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'Especialmente para a experiência') {
+                    pergunta6.classList.remove('hidden');
+                } else {
+                    pergunta6.classList.add('hidden');
+                    pergunta7.classList.add('hidden');
+                }
+            });
+        });
+
+        comprasRadios.forEach(radio => {
+            radio.addEventListener('change', () => {
+                if (radio.value === 'Sim') {
+                    pergunta7.classList.remove('hidden');
+                } else {
+                    pergunta7.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
